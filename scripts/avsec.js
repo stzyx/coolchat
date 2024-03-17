@@ -11,7 +11,7 @@ avatars.forEach((avatar) => {
         var uid = localStorage.getItem('uid');
         var token = localStorage.getItem('token');
         const data = {
-            avatar: "http://localhost:8080/avatars/defaults/" + event.target.src.split('/').pop(),
+            avatar: "https://chat.styy.me/avatars/defaults/" + event.target.src.split('/').pop(),
             avuid: uid,
             avtoken: token
         };

@@ -116,7 +116,7 @@ document.querySelector('#menu').addEventListener('click',() => {
 });
     
 document.querySelector(".avCh").addEventListener('click', () => {
-    window.location.href = "http://localhost:8080/avatars/"
+    window.location.href = "http://chat.styy.me/avatars/"
 });
 document.querySelector(".nameEdit").addEventListener('click', () => {
     let uInput = document.getElementById('toChange').value.toString();
