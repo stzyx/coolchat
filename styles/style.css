@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
@@ -34,8 +35,9 @@ body {
 }
 .chatc header {
   background: #000;
+  display: flex;
   padding: 3px 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
   position: fixed;
   width: 100%;
   z-index: 1;
@@ -44,11 +46,22 @@ body {
   font-style: italic;
   color: whitesmoke;
   font-size: 2.4rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.chatc header #menu {
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-top: 10px;
 }
 .chatbox {
+  display: flex;
   background: black;
   box-sizing: border-box;
-  overflow-y: auto;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   min-height: calc(100%);
   word-wrap: break-word;
   padding: 15px 20px 70px;
@@ -94,9 +107,6 @@ body {
   animation: slideInFromLeft 0.5s, fadeIn 0.5s;
 }
 
-.rText {
-}
-
 .rMessage {
   display: flex;
   align-items: flex-start;
@@ -125,4 +135,63 @@ body {
 .rMessageContent {
   animation: slideOutToRight 0.5s, fadeIn 0.5s;
   padding: -2px;
+}
+.rMessageContentHistory {
+  padding: -2px;
+}
+.drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: width 0.5s;
+  justify-content: center;
+  align-items: center;
+}
+.drawer img {
+  position: relative;
+  border-radius: 50%;
+  margin-top: -350px;
+  max-height: 60%;
+  max-width: 60%;
+  border: 2px solid white;
+  transition: top 0.3s;
+}
+.drawer .avCh {
+  border: 2px solid white;
+  color: whitesmoke;
+  margin-top: 25px;
+  font-weight: bold;
+  padding: 10px 40px 10px;
+  border-radius: 30px;
+  transition: 0.3s;
+} 
+.drawer input {
+  border: none;
+  resize: none;
+  outline: none;
+  border-bottom: 2px solid white;
+  background-color: transparent;
+  margin-top: 25px;
+  color: white;
+}
+.drawer .nameEdit {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  color: whitesmoke;
+  margin-top: 25px;
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 6px 20px 6px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }

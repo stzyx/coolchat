@@ -24,13 +24,37 @@ h1 {
   background: rgba(255, 255, 255, 0.1);
   padding: 3em;
   border-radius: 36px;
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(3px);
-  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.4);
   text-align: center;
 }
-
+/*.custom {
+  display: flex;
+  margin-bottom: 15px;
+  background-image: url(https://cdn.pfps.gg/banners/1648-goku-aesthetic.gif);
+  background-position: center; 
+  background-size: 105%;
+  background-repeat: no-repeat;
+  border-radius: 36px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.4);
+  padding: 70px;
+  justify-content: center;
+  text-align: center; 
+}
+.custom #image {
+  display: none;
+}
+.custom h {
+  font-weight: bold;
+  font-size: 1.7rem;
+  border: none;
+  box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.9);
+}
+*/
 .avatarsList img {
   width: 100px;
   height: 100px;
@@ -38,7 +62,7 @@ h1 {
   border-radius: 50%;
   cursor: auto;
   border: 1px solid white;
-  box-shadow: 5px 5px 15px 5px rgba(225,225,225, 0.5);
+  box-shadow: 5px 5px 15px 5px rgba(255,255,255, 0.5);
   box-sizing: border-box;
   transform: scale(1.2);
 }

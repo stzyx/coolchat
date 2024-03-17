@@ -1,14 +1,17 @@
 if (localStorage.getItem('token') === null) {
     window.location.replace("/identity/");
 } else {
-const avatars = document.querySelectorAll('.avatarsList img')
-
+const avatars = document.querySelectorAll('.avatarsList img');
+/*const upload = document.querySelector('.custom');
+upload.addEventListener('click', () => {
+    document.getElementById('image').click();
+})    */
 avatars.forEach((avatar) => {
     avatar.addEventListener('click', () => {
         var uid = localStorage.getItem('uid');
         var token = localStorage.getItem('token');
         const data = {
-            avatar: event.target.src.split('/').pop(),
+            avatar: "http://localhost:8080/avatars/defaults/" + event.target.src.split('/').pop(),
             avuid: uid,
             avtoken: token
         };

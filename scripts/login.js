@@ -22,6 +22,11 @@ function changeUi() {
     createBtn.innerHTML = '<i class="fa fa-circle-o-notch fa-spin"></i>';
 }
 function dataApi() {
+    if (userid.value === '' || pass.value === '') {
+        alert('Username and password cannot be empty.');
+        location.reload(); // Reload the page
+        return; // Exit the function
+    }
     const data = {
         username: userid.value,
         password: pass.value
