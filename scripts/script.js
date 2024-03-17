@@ -120,6 +120,9 @@ document.querySelector(".avCh").addEventListener('click', () => {
 });
 document.querySelector(".nameEdit").addEventListener('click', () => {
     let uInput = document.getElementById('toChange').value.toString();
+    if (uInput === "" || uInput ===" ") {
+        alert("new usernane feild is required");
+    } else {}
     if (uInput.length > 26) {
         uInput = uInput.substring(16);
     } else {}
