@@ -2,7 +2,7 @@ function allCheck() {
     if (localStorage.getItem('token') === null) {
     window.location.replace("/identity/");
 } else {
-    fetch('https://api.styy.me/v1/check/socket/', {method:'POST'}).then(() => {
+    fetch('https://api.styy.me/v1/socket/check/', {method:'POST'}).then(() => {
         loadMessages();
     });
 }}
