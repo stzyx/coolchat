@@ -1,6 +1,7 @@
+function allCheck() {
 if (localStorage.getItem('token') === null) {
     window.location.replace("/identity/");
-} else {
+} else {}}
 const avatars = document.querySelectorAll('.avatarsList img');
 /*const upload = document.querySelector('.custom');
 upload.addEventListener('click', () => {
@@ -30,4 +31,4 @@ avatars.forEach((avatar) => {
             }})
         .catch(error => {console.error('Error:', error);});
     });
-});}
+});

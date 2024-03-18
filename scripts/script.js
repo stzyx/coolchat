@@ -1,7 +1,11 @@
-if (localStorage.getItem('token') === null) {
+function allCheck() {
+    if (localStorage.getItem('token') === null) {
     window.location.replace("/identity/");
 } else {
-loadMessages();    
+    fetch('https://api.styy.me/v1/check/socket/', {method:'POST'}).then(() => {
+        loadMessages();
+    });
+}}
 const sendBtn = document.querySelector('.wrapper span');
 const chatbox = document.getElementById('chatbox');
     //console.log(chatbox)
@@ -142,4 +146,3 @@ document.querySelector(".nameEdit").addEventListener('click', () => {
             }
         });
 });
-}    

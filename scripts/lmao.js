@@ -1,0 +1,1 @@
+function beforeLoad(){if(localStorage.getItem("token")){window.location.replace("/app/");}else{window.location.replace("/identity/")}}

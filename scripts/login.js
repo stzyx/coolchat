@@ -1,3 +1,4 @@
+function allCheck() {
 if (localStorage.getItem('token')) {
     fetch("https://api.styy.me/v1/check/data", {
         method: 'POST',
@@ -13,7 +14,7 @@ if (localStorage.getItem('token')) {
             window.location.replace("/app/");
         }
     })
-} else {    
+} else {}}    
 const createBtn = document.querySelector('span');
 var userid = document.getElementById('username');
 var pass = document.getElementById('pass');
@@ -50,4 +51,3 @@ createBtn.addEventListener('click', () => {
     changeUi();
     dataApi();
 });
-}
