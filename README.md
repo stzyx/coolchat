@@ -1,2 +1,2 @@
-## frist attempt in real time websocket connections and APIs\n
+## frist attempt in real time websocket connections and APIs
 shit was cool
